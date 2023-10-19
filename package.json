@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Proyecto de la clase 10 del curso de backend de coderhouse.",
   "main": "app.js",
+  "type":"module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "husky install",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "author": "Nacor Diego",
   "license": "ISC",
@@ -12,5 +15,8 @@
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
     "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
