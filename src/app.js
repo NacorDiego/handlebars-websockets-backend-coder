@@ -20,6 +20,4 @@ io.on('connection', socket => {
     console.log('Un usuario se ha conectado.')
 })
 
-app.listen(port, () => console.log(`Server is running at http://localhost:${port}`))
-
-// video clase 10 => 1:53:22
+server.listen(port, () => console.log(`Server is running at http://localhost:${port}`))
